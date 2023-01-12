@@ -82,6 +82,9 @@ const querySelectorMethod = function(className){
    return document.querySelector(className).value;
 }
 
+
+
+
 const buttonhandler = function () {
    nameValue = querySelectorMethod('.nameClass');
    emailValue = querySelectorMethod('.emailClass');
@@ -90,7 +93,9 @@ const buttonhandler = function () {
    let str = 'http://sfdcustomerfeedbackapi.us-e2.cloudhub.io/createrecord?name='+nameValue+'&email='+emailValue+'&description='+feedbackValue;
    urlString = str;
    window.location.href = urlString;
-}
+  
+   alert('Feedback recorded successfully :)')
+ }
 
   </script>
 
